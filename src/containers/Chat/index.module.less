@@ -1,0 +1,82 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+.menu {
+  background-color: #fcfcfc;
+  padding: 10px;
+}
+
+.chatMessages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageWrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.customerMessage,
+.agentMessage {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  word-break: break-all;
+}
+
+.customerMessage {
+  background-color: #E8E8E8;
+  border: 1px solid #BFBFBF;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.agentMessage {
+  margin-left: auto;
+  background-color: #DCF8C6;
+  border: 1px solid #9AD68A;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.messageTime {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  // background-color: #f0f2f5;
+}
+
+.inputComponent {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.sendMessageButton {
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .chatContainer {
+    height: auto;
+  }
+
+  .chatMessages {
+    height: 60vh;
+  }
+
+  .inputContainer {
+    padding: 5px;
+  }
+}
